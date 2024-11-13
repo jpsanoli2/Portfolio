@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #85cff9;
+    --secondary-color: #341542;
+    --terciary-color: #f1f1f1;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    padding: 30px 0;
+    margin: 0;
+}
+header a {
+    color: var(--secondary-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+main{
+    background-color: var(--terciary-color);
+    padding: 50px 0;
+}
+footer a i {
+    color: var(--secondary-color);
+    font-size: 30px;
+}
+.mail{
+    color: var(--secondary-color);
+    font-weight: 600;
+    
+}
+.about {
+    background-color: var(--primary-color);
+    border-radius: 0.5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    padding: 40px 20px;
+}
+.project {
+    background-color: var(--primary-color);
+    border-radius: 0.5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    padding: 40px 20px;
+}
+h2, h3, p{
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.btn-download:hover {
+    background-color: #6bbff0;
+    transform: translateY(-2px);
+}
+.btn-download i {
+    margin-right: 10px;
+}
+.d-flex{
+    margin-bottom: 30px;
+}
+.project .d-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+
+.project .d-flex > * {
+    flex: 1 1 auto;
+}
+img {
+    width: 350px;
+    height: auto;
+}
